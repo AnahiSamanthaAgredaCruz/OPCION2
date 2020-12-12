@@ -16,7 +16,15 @@ namespace Operacion.Controllers
         public string Operaiones( int numero)
         {
             string respuesta = "";
-            i
+            if (numero < 0)
+            { respuesta = "ERROR"; }
+
+            if (numero == 0)
+            { respuesta = "Realizado por Anahi Agreda"; }
+
+            if (numero > 0)
+            { respuesta = "https://image.freepik.com/vector-gratis/numeros-cartel-imagen_1639-6453.jpg"; }
+            return respuesta;
 
         }
     }
